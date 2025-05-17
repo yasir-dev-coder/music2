@@ -19,7 +19,7 @@ async function getSongs(folder) {
     // let a = await fetch(`${window.location.origin}/${currFolder}/`);
     // let response = await a.text();
 
-    let a = await fetch(`http://127.0.0.1:3000/${currFolder}/`);
+    let a = await fetch(`${currFolder}/`);
     let response = await a.text();
 
 
