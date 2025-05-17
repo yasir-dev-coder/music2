@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Toggle Text Boxes</title>
+  <style>
+    .box {
+      padding: 15px;
+      margin: 5px;
+      width: 100px;
+      border: 1px solid #333;
+      text-align: center;
+      cursor: pointer;
+      display: inline-block;
+      font-family: sans-serif;
+      background-color: #f0f0f0;
+      border-radius: 5px;
+    }
+
+    .box:hover {
+      background-color: #ddd;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 9 Boxes -->
+  <div class="box">one text</div>
+  <div class="box">one text</div>
+  <div class="box">one text</div>
+  <div class="box">one text</div>
+  <div class="box">one text</div>
+  <div class="box">one text</div>
+  <div class="box">one text</div>
+  <div class="box">one text</div>
+  <div class="box">one text</div>
+
+  <script>
+    // Simple toggle logic
+    document.querySelectorAll('.box').forEach(box => {
+      box.addEventListener('click', () => {
+        document.querySelectorAll('.box').forEach(b => b.textContent = 'one text');
+        box.textContent = 'two text';
+      });
+    });
+  </script>
+
+</body>
+</html>

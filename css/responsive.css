@@ -1,0 +1,437 @@
+/* 
+@media (max-width:1350px) {
+    .left {
+        position: absolute;
+        left: -100%;
+        z-index: 1;
+        transition: all 0.5s;
+        background-color: #121212;
+        width: 425px;
+    }
+
+    .right {
+        width: 100vw;
+        height: 88vh;
+    }
+
+    .content {
+        height: 600px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .cross {
+        display: block;
+    }
+
+    .nav-right {
+        display: none;
+    }
+
+    .nav-left {
+        width: 100%;
+    }
+
+    .home {
+        margin-right: 60px;
+    }
+
+    .h1 {
+        display: block;
+        margin-right: 20px;
+    }
+
+    .card {
+        padding: 5px;
+        margin: 8px 3px;
+    }
+
+    .songs {
+        height: 675px;
+    }
+}
+
+
+
+
+
+
+@media (max-width:392px) {
+    .left {
+        position: absolute;
+        left: -200%;
+        z-index: 1;
+        transition: all 0.5s;
+        background-color: #121212;
+        width: 385px;
+        height: 93vh;
+        transition: all 0.1s;
+    }
+
+    .right {
+        width: 100vw;
+        height: 88vh;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .cross {
+        display: block;
+    }
+
+    .card {
+        width: 170px;
+        position: relative;
+        cursor: pointer;
+        transition: 1.5sease;
+        margin: 8px 0px;
+        padding: 5px;
+    }
+
+    .content {
+        height: 600px;
+    }
+
+    .nav {
+        height: 6vh;
+        display: flex;
+        align-items: center;
+    }
+
+    .logo {
+        margin-left: 10px;
+    }
+
+    .nav-right {
+        display: none;
+    }
+
+    .nav-left {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .height-logo {
+        height: 25px;
+    }
+
+    .home {
+        height: 35px;
+        width: 35px;
+        margin: 0px 10px;
+    }
+
+    .search {
+        display: none;
+    }
+
+    .h1 {
+        display: block;
+        margin-left: 50px;
+    }
+
+    .playbar {
+        font-size: 10px;
+        position: relative;
+        bottom: 20px;
+        padding: 10px 0px;
+    }
+
+    .all-song-info {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .songs {
+        height: 675px;
+    }
+
+    .songName {
+        margin: auto;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .timenVol {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    .songDuration{
+        font-size: 14px;
+    }
+
+    .volume {
+        margin-left: 18px;
+    }
+
+    .seekbar{
+        margin-bottom: 5px;
+    }
+}
+
+
+@media (max-width:750px) {
+    .search {
+        display: none;
+    }
+
+    .h1 {
+        margin-left: 150px;
+    }
+} */
+
+
+
+@media(max-width:1350px) {
+    .card {
+        width: 21%;
+    }
+}
+
+@media(max-width:1200px) {
+    .left {
+        position: absolute;
+        left: -120%;
+        z-index: 1;
+        transition: all 2s;
+        background-color: #121212;
+        width: 425px;
+    }
+    
+    .hamburger {
+        display: block;
+    }
+    
+    .right {
+        width: 100%;
+        height: 90vh;
+    }
+    
+    .cross {
+        transition: all 2s;
+        display: block;
+    }
+
+    .songs {
+        height: 440px;
+    }
+}
+
+@media(max-width:1050px) {
+    .nav-right {
+        display: none;
+    }
+
+    .nav-left {
+        width: 65%;
+    }
+
+    .spotify {
+        display: block;
+        width: 35%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .spotify h1 {
+        margin: 20px;
+    }
+}
+
+@media(max-width:770px) {
+    .card {
+        width: 30%;
+        margin: 0px 2px;
+    }
+
+    input {
+        width: 70%;
+    }
+
+    .browse {
+        padding-left: 10px;
+    }
+}
+
+@media(max-width:725px) {
+    .content {
+        display: flex;
+        justify-content: center;
+        height: 54vh;
+    }
+
+    .card {
+        width: 35%;
+        height: 240px;
+        margin-top: 10px;
+        width: 40%;
+    }
+
+    .all-song-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .songName {
+        padding: 5px;
+        text-align: center;
+    }
+
+    .play-btns {
+        padding: 5px;
+    }
+
+    .timenVol {
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .songDuration {
+        padding: 5px;
+    }
+
+    .seekbar {
+        bottom: 10px;
+    }
+
+    .songName {
+        justify-content: center;
+    }
+}
+
+@media(max-width:600px) {
+    .search {
+        display: none;
+    }
+
+    .logo {
+        padding: 20px;
+    }
+
+    .popular{
+        height: 4vh;
+    }
+
+    .playbar{
+        height: 20vh;
+    }
+
+    .content{
+        height: 58vh;
+    }
+
+}
+
+@media(max-width:450px) {
+    .left {
+        width: 290px;
+    }
+
+    .li-start{
+        gap: 8px;
+    }
+
+    .li-start img{
+        height: 18px;
+    }
+
+    .info{
+        font-size: 11px;
+    }
+
+    .playnow img{
+        height: 18px;
+    }
+
+    .flex h2 {
+        font-size: 20px;
+    }
+
+    .hamburger{
+        height: 20px;
+    }
+
+    .show{
+        height: 15px;
+    }
+
+    .footer{
+        display: none;
+    }
+
+    .songs{
+        height: 600px;
+    }
+
+}
+
+/* @media(max-width:430px){
+    .nav{
+        height: 6vh;
+    }
+
+    .playbar{
+        height: 20vh;
+    }
+
+    .content{
+        height: 60vh;
+    }
+} */
+
+@media(max-width:380px) {
+    .card {
+        width: 65%;
+    }
+
+    .flex h2 {
+        font-size: 18px;
+    }
+
+    .songName {
+        font-size: 14px;
+        width: 100%;
+    }
+}
+
+@media(max-width:300px){
+    .left{
+        width: 250px;
+    }
+
+    .flex h2 {
+        font-size: 15px;
+    }
+
+    .hamburger {
+        height: 16px;
+    }
+
+    .show{
+        font-size: 13px;
+    }
+
+    .cross {
+        height: 15px;
+    }
+
+    .logo img{
+        height: 25px;
+    }
+
+    h1{
+        font-size: 18px;
+    }
+}
