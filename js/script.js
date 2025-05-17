@@ -164,7 +164,7 @@ async function songAlbums() {
 
 async function main() {
 
-    await getSongs("songs/Aleem_RK")
+    await getSongs("songs/Aleem_Rk")
     playMusic(songs[0], true)
 
     //DISPLAY ALL THE ALBUMS DYNAMICALLY
