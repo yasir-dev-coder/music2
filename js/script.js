@@ -47,7 +47,7 @@ async function getSongs(folder) {
         songUL.innerHTML = songUL.innerHTML + `  
 <li>
                             <div class="li-start">
-                                <img src="/svgs/music.svg" alt="">
+                                <img src="svgs/music.svg" alt="">
                                 <div class="info">
                                     <div><h3>${yasirsong[0]}</h3></div>
                                     <div>${yasirsong[1] ? yasirsong[1].replace(".mp3", "").trim() : "Unknown Artist"}</div>
@@ -55,7 +55,7 @@ async function getSongs(folder) {
                             </div>
                             <div class="playnow">
                                 <span>Play Now</span>
-                                <img src="/svgs/playNow.svg" alt="">
+                                <img src="svgs/playNow.svg" alt="">
                             </div>
                         </li>
         `
@@ -75,26 +75,26 @@ async function getSongs(folder) {
 
             // Reset all play icons to default
             document.querySelectorAll(".songs ul li .playnow img").forEach(img => {
-                img.src = "/svgs/playNow.svg";
+                img.src = "svgs/playNow.svg";
             });
 
             if (currentlyPlayingLi === e) {
                 // Same song clicked again
                 if (currentSong.paused) {
                     currentSong.play();
-                    clickedImg.src = "/svgs/pause.svg";
-                    play.src = "/svgs/pause.svg";
+                    clickedImg.src = "svgs/pause.svg";
+                    play.src = "svgs/pause.svg";
                 } else {
                     currentSong.pause();
-                    clickedImg.src = "/svgs/playNow.svg";
+                    clickedImg.src = "svgs/playNow.svg";
                     play.src = "play.svg";
                 }
             } else {
                 // New <li> clicked
                 currentlyPlayingLi = e;
                 playMusic(li_final_name);
-                clickedImg.src = "/svgs/pause.svg";
-                play.src = "/svgs/pause.svg";
+                clickedImg.src = "svgs/pause.svg";
+                play.src = "svgs/pause.svg";
             }
         });
     });
@@ -177,10 +177,10 @@ async function main() {
     play.addEventListener("click", () => {
         if (currentSong.paused) {
             currentSong.play()
-            play.src = "/svgs/pause.svg"
+            play.src = "svgs/pause.svg"
         } else {
             currentSong.pause()
-            play.src = "/svgs/play.svg"
+            play.src = "svgs/play.svg"
         }
     })
 
@@ -248,12 +248,12 @@ async function main() {
     document.querySelector(".volume>img").addEventListener("click", e => {
         console.log(e.target)
         if (e.target.src.includes("volume.svg")) {
-            e.target.src = e.target.src.replaceAll = ("/svgs/volume.svg", "/svgs/mute.svg")
+            e.target.src = e.target.src.replaceAll = ("svgs/volume.svg", "svgs/mute.svg")
             currentSong.volume = 0
             document.querySelector(".range").getElementsByTagName("input")[0].value = 0
         }
         else {
-            e.target.src = e.target.src.replaceAll = ("/svgs/mute.svg", "/svgs/volume.svg")
+            e.target.src = e.target.src.replaceAll = ("svgs/mute.svg", "svgs/volume.svg")
             currentSong.volume = .10
             document.querySelector(".range").getElementsByTagName("input")[0].value = 10
         }
